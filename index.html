@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="contInput">
+      <h1>Formulario de Datos</h1>
+      <form onsubmit="validarFormulario(event)" class="formContact">
+        <div class="divInput">
+          <label for="name">Nombre</label>
+          <input type="text" placeholder="Escriba aquí su nombre" id="name" />
+          <small id="mensajeAlertaNombre" class="mensajeAlerta"></small>
+        </div>
+        <div class="divInput">
+          <label for="mailto">Correo</label>
+          <input type="email" placeholder="ejemplo@ejem.com" id="mailto" />
+        </div>
+        <div class="divInput">
+          <label for="clave">Password</label>
+          <input type="password" id="clave" />
+        </div>
+        <div class="divInput">
+          <label for="age">Edad</label>
+          <input type="number" id="age" />
+        </div>
+        <div class="divInput inputCheckbox">
+          <label class="mi-checkbox">
+            <input id="mi-checkboxInput" type="checkbox" />
+            <span class="mi-checkboxText"
+              >Acepto los términos y condiciones</span
+            >
+          </label>
+        </div>
+        <small id="mensajeAlertTyC" class="mensajeAlerta"></small>
+        <input type="submit" value="Enviar" class="btnEnviar" />
+      </form>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>
